@@ -22,5 +22,10 @@ public class Browsers extends BaseClass {
 		launchBrowser("firefox");
 
 	}
+	
+	@Test
+	private void edge() {
+		launchBrowser("edge");
+	}
 
 }
