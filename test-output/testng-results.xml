@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52938" started-at="2021-09-14T04:30:08Z" finished-at="2021-09-14T04:31:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52938" started-at="2021-09-14T04:30:08Z" finished-at="2021-09-14T04:31:01Z">
+      <class name="org.browsers.Browsers">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="beforeMethod" is-config="true" duration-ms="20" started-at="2021-09-14T04:30:08Z" finished-at="2021-09-14T04:30:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="chrome()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="chrome" duration-ms="6366" started-at="2021-09-14T04:30:08Z" finished-at="2021-09-14T04:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chrome -->
+        <test-method status="FAIL" signature="edge()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="edge" duration-ms="6463" started-at="2021-09-14T04:30:14Z" finished-at="2021-09-14T04:30:21Z">
+          <exception class="io.github.bonigarcia.wdm.WebDriverManagerException">
+            <message>
+              <![CDATA[java.util.NoSuchElementException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.WebDriverManagerException: java.util.NoSuchElementException
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+at org.base.BaseClass.launchBrowser(BaseClass.java:62)
+at org.browsers.Browsers.edge(Browsers.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.util.NoSuchElementException
+at java.util.ArrayList$Itr.next(Unknown Source)
+at io.github.bonigarcia.wdm.EdgeDriverManager.checkLatest(EdgeDriverManager.java:179)
+at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:799)
+at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:568)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edge -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-09-14T04:30:14Z" finished-at="2021-09-14T04:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="firefox()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="firefox" duration-ms="40003" started-at="2021-09-14T04:30:21Z" finished-at="2021-09-14T04:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.browsers.Browsers@57fffcd7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-09-14T04:30:21Z" finished-at="2021-09-14T04:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- org.browsers.Browsers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
